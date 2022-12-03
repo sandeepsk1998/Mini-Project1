@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website</title>
+    <link rel="stylesheet" href="./Portfolio-Website_files/style.css">
+    <link rel="stylesheet" href="./Portfolio-Website_files/all.min.css">
+    <script src="./Portfolio-Website_files/javascript.js.download" defer=""></script>
+
+</head>
+
+<body>
+    <div class="hero">
+        <nav class="nav">
+            <img src="./Portfolio-Website_files/logo.png" class="logo">
+
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">About</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Portfolio</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Services</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#">Hire Me</a></li>
+
+
+            </ul>
+            <img src="./Portfolio-Website_files/moon.png" id="icon">
+
+        </nav>
+ 
+        <div class="info">
+
+        <h1>I am  <span> Kiara</span> Advani</h1>
+        <p> This is my official website to showcasee my all works<br> related to web development and UI design.</p>
+        <a href="http://127.0.0.1:5500/index.html"> Download Resume</a>
+        </div>
+ <div class="img-box">
+    <img src="./Portfolio-Website_files/bg.png" class="back-img">
+    <img src="./Portfolio-Website_files/main.png" class="main-img">
+
+    
+ </div>
+
+ <div class="social-links">
+
+    <a href="http://127.0.0.1:5500/index.html"> <i class="fab fa-linkedin"></i></a>
+    <a href="http://127.0.0.1:5500/index.html"> <i class="fab fa-behance"></i></a>
+    <a href="http://127.0.0.1:5500/index.html"> <i class="fab fa-dribbble"></i></a>
+
+ </div>
+
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
